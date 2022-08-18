@@ -41,7 +41,7 @@ class LuckyTicket{
     private function addCountInBody():void{
         $countStartT = $this->separateNum($this->start)[0] + 1;
         $countEndT = $this->separateNum($this->end)[0];
-        $this->allCount += ($countEndT - $countStartT)*111;
+        $this->allCount += ($countEndT - $countStartT)*111; //В каждой тысячи 111 счастливых билетов, этим и воспользовался для оптимизации
     }
 
     private function getCountInFormat($start, $end):void{
